@@ -7,10 +7,14 @@
     tools:context=".StartActivity"
     android:background="#DFDEC4">
 
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="163dp"
-        android:layout_height="152dp"
+        android:layout_width="114dp"
+        android:layout_height="113dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,8 +24,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="397dp"
-        android:layout_height="59dp"
+        android:layout_width="312dp"
+        android:layout_height="43dp"
         android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +34,7 @@
 
     <Button
         android:id="@+id/singUpButton"
-        android:background="#E12828"
+        android:background="#000000"
         android:layout_width="370dp"
         android:layout_height="59dp"
         android:text="SignUp"
