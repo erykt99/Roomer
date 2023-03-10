@@ -4,17 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewUserInfo"
-    android:background="#9F9D9D">
+    tools:context=".NewUserInfoActivity"
+    android:background="#0C0C0C">
+
 
     <EditText
-        android:id="@+id/editTextDate2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/newUserName"
+        android:layout_width="295dp"
+        android:layout_height="49dp"
         android:ems="10"
-        android:inputType="date"
+        android:gravity="center"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791"
+        tools:textColorHint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="295dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Phone number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/newUserDateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866"
+        tools:textColorHint="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/newUserDateButton"
+        android:layout_width="295dp"
+        android:layout_height="49dp"
+        android:text="Date of birth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <EditText
+        android:id="@+id/newUserExtraInfo"
+        android:layout_width="394dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Extra Info"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserDateButton"
+        tools:textColorHint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="165dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserExtraInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserDateButton"
+        app:layout_constraintVertical_bias="0.427"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

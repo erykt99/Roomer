@@ -12,7 +12,7 @@ class SignUpActivity : AppCompatActivity() {
 
         val continueButton = findViewById<Button>(R.id.continueButton)
         continueButton.setOnClickListener {
-            val intent = Intent(this, NewUserInfo::class.java)
+            val intent = Intent(this, NewUserInfoActivity::class.java)
             startActivity(intent)
         }
     }

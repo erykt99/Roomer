@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".NewUserInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewUserInfo"
             android:exported="false" />
         <activity
